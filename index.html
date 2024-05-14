@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.tanjungbunga.com/wp-content/cache/min/1/f21dfa2612fcb773ecbf5384ff412890.css" media="all" data-minify="1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <style>
+        body {
+            background-color: cornsilk;
+            color: white;
+            font-family: 'Times New Roman', Times, serif; /* Ubah font family menjadi Times New Roman */
+            margin: 0;
+            padding: 0;
+            padding-bottom: 100px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .elementor-background-overlay span {
+            color: white !important;
+        }
+
+        footer {
+            background-color: #161242;
+            padding: 30px 0;
+            color: white;
+            text-align: left;
+            width: 105%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-top: 200px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 2;
+            margin-right: 90px;
+        }
+
+        h6, p, ul, li {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h6 {
+            margin-bottom: 5px;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .overlay-text p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Alice', sans-serif;
+            font-style: italic;
+            font-size: 24px;
+            text-align: center;
+            color: #000;
+        }
+        .custom-shape {
+            width: fit-content;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #161242;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .custom-shape:hover {
+            background-color: #161242;
+            color: #ffffff;
+        }
+
+        .custom-shape h5 {
+            margin: 0;
+        }
+        .swiper-container {
+            width: 65%;
+            height: 500px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div data-elementor-type="header" data-elementor-id="9405" class="elementor elementor-9405 elementor-location-header">
+    <section class="elementor-section elementor-top-section elementor-element elementor-element-eea6edb elementor-section-height-min-height elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-items-middle" data-id="eea6edb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_effects_offset&quot;:100,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0}">
+        <div class="elementor-background-overlay" style="display: flex; justify-content: flex-end; align-items: center;">
+            <span style="margin-right: 20px; font-family: Arial, sans-serif; font-size: 16px; color: #161242;">PT. Gowa Makassar Tourism Development, Tbk</span>
+            <img src="static/img/tanjungbunga.png" alt="Tanjung Bunga" style="margin-right: 20px; max-width: 80px;">
+
+        </div>
+        <div class="elementor-container elementor-column-gap-no">
+            <section class="elementor-section elementor-inner-section elementor-element elementor-element-71a5ca37 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="71a5ca37" data-element_type="section">
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="19" viewBox="0 0 5 19" fill="none">
+                    <circle cx="2.5" cy="2.5" r="2.5" fill="#FFFEFE"></circle>
+                    <circle cx="2.5" cy="9.5" r="2.5" fill="#FFFEFE"></circle>
+                    <circle cx="2.5" cy="16.5" r="2.5" fill="#FFFEFE"></circle>
+                </svg>
+            </section>
+        </div>
+    </section>
+</div>
+
+<section style="margin-top: 60px; text-align: center;">
+    <h4 style="font-family: 'Times New Roman', Times, serif; font-style: italic; color: #161242;">
+        Tell Us About The Experience <br> You Had At GTC Mall Makassar
+    </h4>
+</section>
+
+<section style="margin-top: 20px;">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="static/img/gtc.jpeg" alt="GTC">
+            </div>
+            <div class="swiper-slide">
+                <img src="static/img/mallgtc.jpeg" alt="Mall GTC">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+<section style="margin-top: 20px; margin-bottom: 200px; text-align: center;">
+    <div class="custom-shape">
+        <h5 style="font-family: 'Times New Roman', Times, serif; font-style: italic; color: #161242;">
+            Explore Our Facilities
+        </h5>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div>
+            <img src="static/img/logogtc.png" alt="Logo GTC" style="max-width: 150px; margin-right: 100px; margin-top:10px ">
+        </div>
+        <div class="footer-column">
+            <h5>Navigasi</h5>
+            <p>Tentang Kami</p>
+            <p>Investor & Tata kelola</p>
+            <p>Bisnis Kami</p>
+            <p>Media Informasi</p>
+            <p>Promosi</p>
+        </div>
+        <div class="footer-column">
+            <h5>Kontak</h5>
+            <p><i class="fas fa-phone-alt"></i> 0411 600 88 77</p>
+            <p><i class="fab fa-whatsapp"></i> 0821 6008 8787</p>
+            <p><i class="far fa-envelope"></i> info@tanjungbunga.com</p>
+        </div>
+        <div class="footer-column">
+            <h5>Alamat</h5>
+            <p>Kantor Pusat : Mall GTC GA-9 No. 1B, Jl. Metro Tanjung Bunga, Tanjung Bunga - Makassar 90134, Sulawesi Selatan, Indonesia</p>
+            <p>Marketing Gallery : Jl. Metro Tanjung Bunga Makassar. No telp. 0411 600 8787</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
