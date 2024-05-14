@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.tanjungbunga.com/wp-content/cache/min/1/f21dfa2612fcb773ecbf5384ff412890.css" media="all" data-minify="1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
     <style>
         body {
             background-color: cornsilk;
@@ -25,11 +28,11 @@
             padding: 30px 0;
             color: white;
             text-align: left;
-            width: 100%;
-            position: relative;
+            width: 105%;
+            position: absolute;
             bottom: 0;
             left: 0;
-            margin-top: 50px;
+            margin-top: 200px;
         }
 
         .container {
@@ -47,7 +50,7 @@
         }
 
         h6, p, ul, li {
-            font-size: 11px;
+            font-size: 12px;
             margin: 0;
             padding: 0;
         }
@@ -82,6 +85,34 @@
             text-align: center;
             color: #000;
         }
+        .custom-shape {
+            width: fit-content;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #161242;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .custom-shape:hover {
+            background-color: #161242;
+            color: #ffffff;
+        }
+
+        .custom-shape h5 {
+            margin: 0;
+        }
+        .swiper-container {
+            width: 65%;
+            height: 500px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
     </style>
 </head>
 <body>
@@ -106,32 +137,58 @@
 </div>
 
 <section style="margin-top: 60px; text-align: center;">
-    <h5 style="font-family: 'Times New Roman', Times, serif; font-style: italic; color: #161242;">
+    <h4 style="font-family: 'Times New Roman', Times, serif; font-style: italic; color: #161242;">
         Tell Us About The Experience <br> You Had At GTC Mall Makassar
-    </h5>
+    </h4>
 </section>
 
-
 <section style="margin-top: 20px;">
-    <div class="swiper-container" style="max-width: 500px; margin: 0 auto; position: relative;">
+    <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="position: relative;">
-                <img src="static/img/gtc.jpeg" alt="GTC" style="max-width: 100%; height: auto; ">
-
+            <div class="swiper-slide">
+                <img src="static/img/gtc.jpeg" alt="GTC">
             </div>
-            <div class="swiper-slide" style="position: relative;">
-                <img src="static/img/mallgtc.jpeg" alt="GTC" style="max-width: 100%; height: auto;">
+            <div class="swiper-slide">
+                <img src="static/img/mallgtc.jpeg" alt="Mall GTC">
+            </div>
         </div>
-        <div class="swiper-button-next" style="right: 10%; transform: translateX(50%); top: 55%; transform: translateY(-50%);"></div>
-        <div class="swiper-button-prev" style="left: 10%; transform: translateX(-50%); top: 55%; transform: translateY(-50%);"></div>
-        <div class="swiper-pagination" style="bottom: 50px;"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+<section style="margin-top: 20px; margin-bottom: 200px; text-align: center;">
+    <div class="custom-shape">
+        <h5 style="font-family: 'Times New Roman', Times, serif; font-style: italic; color: #161242;">
+            Explore Our Facilities
+        </h5>
     </div>
 </section>
 
 <footer>
     <div class="container">
         <div>
-            <img src="static/img/logogtc.png" alt="Logo GTC" style="max-width: 110px; margin-right: 100px; margin-top:10px ">
+            <img src="static/img/logogtc.png" alt="Logo GTC" style="max-width: 150px; margin-right: 100px; margin-top:10px ">
         </div>
         <div class="footer-column">
             <h5>Navigasi</h5>
@@ -143,10 +200,9 @@
         </div>
         <div class="footer-column">
             <h5>Kontak</h5>
-            <p>For More Info :</p>
-            <p>0411 600 88 77</p>
-            <p>0821 6008 8787</p>
-            <p>info@tanjungbunga.com</p>
+            <p><i class="fas fa-phone-alt"></i> 0411 600 88 77</p>
+            <p><i class="fab fa-whatsapp"></i> 0821 6008 8787</p>
+            <p><i class="far fa-envelope"></i> info@tanjungbunga.com</p>
         </div>
         <div class="footer-column">
             <h5>Alamat</h5>
@@ -155,7 +211,6 @@
         </div>
     </div>
 </footer>
-
 
 </body>
 </html>
