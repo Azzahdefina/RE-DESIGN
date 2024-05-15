@@ -112,7 +112,33 @@
             height: auto;
             object-fit: cover;
         }
-        
+
+        #menu {
+            position: absolute;
+            top: 80px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+            background-color: #161242;
+            padding: 10px;
+            border: 1px solid #ccc;
+            z-index: 1;
+            display: none; /* Menyembunyikan menu awalnya */
+        }
+
+        #menu a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu a:hover {
+            background-color: #ddd;
+        }
+
+        #dots {
+            position: relative;
+            cursor: pointer; /* Add cursor pointer to indicate interactivity */
+        }
     </style>
 </head>
 <body>
@@ -122,14 +148,13 @@
         <div class="elementor-background-overlay" style="display: flex; justify-content: flex-end; align-items: center;">
             <span style="margin-right: 20px; font-family: Arial, sans-serif; font-size: 16px; color: #161242;">PT. Gowa Makassar Tourism Development, Tbk</span>
             <img src="static/img/tanjungbunga.png" alt="Tanjung Bunga" style="margin-right: 20px; max-width: 80px;">
-
         </div>
         <div class="elementor-container elementor-column-gap-no">
             <section class="elementor-section elementor-inner-section elementor-element elementor-element-71a5ca37 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="71a5ca37" data-element_type="section">
-                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="19" viewBox="0 0 5 19" fill="none">
-                    <circle cx="2.5" cy="2.5" r="2.5" fill="#FFFEFE"></circle>
-                    <circle cx="2.5" cy="9.5" r="2.5" fill="#FFFEFE"></circle>
-                    <circle cx="2.5" cy="16.5" r="2.5" fill="#FFFEFE"></circle>
+                <svg id="dots" xmlns="http://www.w3.org/2000/svg" width="5" height="19" viewBox="0 0 5 19" fill="none">
+                    <circle id="dot1" cx="2.5" cy="2.5" r="2.5" fill="#FFFEFE" onclick="toggleMenu()"></circle>
+                    <circle id="dot2" cx="2.5" cy="9.5" r="2.5" fill="#FFFEFE" onclick="toggleMenu()"></circle>
+                    <circle id="dot3" cx="2.5" cy="16.5" r="2.5" fill="#FFFEFE" onclick="toggleMenu()"></circle>
                 </svg>
             </section>
         </div>
@@ -211,6 +236,24 @@
         </div>
     </div>
 </footer>
+
+<div id="menu">
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+</div>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+    } else {
+        menu.style.display = 'none';
+    }
+}
+</script>
 
 </body>
 </html>
