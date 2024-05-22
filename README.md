@@ -6,7 +6,7 @@ Melakukan Re-Design Pada Website Mall GTC Makassar Bagian Home
 Berikut Merupakan Tampilan Home Website Mall GTC:
 ![home gtc website](https://github.com/Azzahdefina/RE-DESIGN/assets/147989734/2a5179e9-c8be-4c7a-81ab-eb7a11cb5ee4)
 
-saya melakukan re-design pada bagian background nya, yang dimana awalnya terlihat sangat abstark dan tidak rapih, lalu saya memperbaiki juga pada bagian logo Tanjung bunga nya menjadi lebih kecil sedikit, dan saya juga mengganti font pada tulisan "PT. Gowa Makassar Tourism Development, Tbk" dan saya juga memindahkan logo mall gtc nya, karena saya merasa logo mall gtc pada tampilan website awalnya kurang tepat.
+saya melakukan re-design pada bagian background nya, yang dimana awalnya terlihat sangat abstark dan tidak rapih, lalu saya memperbaiki juga pada bagian logo Tanjung bunga nya menjadi lebih kecil sedikit, dan saya juga mengganti font pada tulisan "PT. Gowa Makassar Tourism Development, Tbk" dan saya juga memindahkan logo mall gtc nya, karena saya merasa logo mall gtc pada tampilan website awalnya kurang tepat. Dan saya juga menambahkan fitur slide foto agar user dapat melihat foto2 terkait mall gtc, dan pada bagian bawah foto saya membuat tombol Explore our facilites yang dapat mengarahkan user pada halaman mengenai fasilitas yang ada di mall gtc.
 
 Tampilan Setelah di Re-Design:
 ![WhatsApp Image 2024-05-14 at 19 17 52](https://github.com/Azzahdefina/RE-DESIGN/assets/147989734/034d8eba-8161-435a-980f-1b26a913aa84)
