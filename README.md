@@ -6,7 +6,7 @@ Melakukan Re-Design Pada Website Mall GTC Makassar Bagian Home
 Berikut Merupakan Tampilan Home Website Mall GTC:
 ![home gtc website](https://github.com/Azzahdefina/RE-DESIGN/assets/147989734/2a5179e9-c8be-4c7a-81ab-eb7a11cb5ee4)
 
-saya melakukan re-design 
+saya melakukan re-design pada bagian navbar nya, dimana 
 
 Tampilan Setelah di Re-Design:
 ![WhatsApp Image 2024-05-14 at 19 17 52](https://github.com/Azzahdefina/RE-DESIGN/assets/147989734/034d8eba-8161-435a-980f-1b26a913aa84)
